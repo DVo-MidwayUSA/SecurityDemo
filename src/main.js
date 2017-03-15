@@ -1,13 +1,16 @@
 'use strict'
 
-class Hello {
+let count = 0
 
-    constructor() {
+function addToDo() {
 
-    }
+    let todo = document.getElementById('input'),
+        node = document.createElement('li')
 
-    world() {
-        
-        return 'hello world'
-    }
+    node.innerHTML = `<input type="checkbox" /><span>${todo.value}</span>`
+
+    document.getElementById('column' + (count % 2 + 1)).appendChild(node)
+
+    todo.value = ''
+    count++
 }

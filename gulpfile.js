@@ -28,9 +28,15 @@ gulp.task('build:scripts', () => {
 
 gulp.task('build', ['build:sass', 'build:scripts'])
 
+gulp.task('watch', () => {
+
+    gulp.watch('src/*.scss', ['build:sass'])
+    gulp.watch('src/*.js', ['build:scripts'])
+})
+
 gulp.task('connect', () => {
 
     connect.server({ root: 'docs' })
 })
 
-gulp.task('default', ['build', 'connect'])
+gulp.task('default', ['build', 'connect', 'watch'])
