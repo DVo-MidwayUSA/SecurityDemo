@@ -18,5 +18,14 @@
   "bugs": {
     "url": "https://github.com/DVo-MidwayUSA/SecurityDemo/issues"
   },
-  "homepage": "https://github.com/DVo-MidwayUSA/SecurityDemo#readme"
+  "homepage": "https://github.com/DVo-MidwayUSA/SecurityDemo#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1"
+  }
 }
